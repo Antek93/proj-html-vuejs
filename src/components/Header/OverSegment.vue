@@ -58,7 +58,7 @@ export default {
 
 <style lang="scss">
 .over {
-    width: 70%;
+    width: 80%;
     height: 3vh;
     margin: 0 auto;
     text-align: center;

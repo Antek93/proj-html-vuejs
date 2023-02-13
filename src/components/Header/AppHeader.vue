@@ -39,7 +39,10 @@ export default {
         <div class="mainContainer container-fluid">
             
             <!-- SEGMENTO SUPERIORE: WISHLIST - NEED HELP ? - PHONE NUMBER -->
-            <OverSegment/>
+            <OverSegment
+            :menu-list="menuList"
+            :phoneNumber="phoneNumber"
+            />
             
             <!-- LINEA SEPARE' -->
             <hr class="text-light">

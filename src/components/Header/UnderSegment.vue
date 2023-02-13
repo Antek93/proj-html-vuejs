@@ -53,7 +53,7 @@ export default {
 
 <style lang="scss">
 .under {
-    width: 70%;
+    width: 80%;
     height: 10vh;
     margin: 0 auto;
     text-align: center;

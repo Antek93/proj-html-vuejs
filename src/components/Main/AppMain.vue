@@ -1,13 +1,32 @@
 <script>
 //Import da store.js
 import { store } from "../../store"
+import BachecaAds from "./MainPartials/BachecaAds.vue"
 
 export default {
     name: 'AppMain',
     data() {
         return {
             msg: 'Ciao',
-            store
+            store,
+            benefits: [
+                {
+                    title: "Free Delivery",
+                    subtitle: "Free Shipping On All Order"
+                },
+                {
+                    title: "Money Return",
+                    subtitle: "Back Guarantee in 7 days"
+                },
+                {
+                    title: "Member Discount",
+                    subtitle: "On every order over $130.00"
+                },
+                {
+                    title: "Return Policy",
+                    subtitle: "Support 24 hours a day"
+                }
+            ]
         }
     },
     created() {
@@ -15,48 +34,95 @@ export default {
     },
     methods: {
     },
+    components: {
+        BachecaAds,
+    }
 
 };
 </script>
 
 <template>
-    <!-- CONTAINER PRINCIPALE CON GIOCO IN USCITA -->
-    <div class="mainContainer container-fluid text-light">
 
-        <!-- CONTAINER CON "DISCLAIMER" + "TITOLO GIOCO IN USCITA" + "TASTO SHOPNOW" -->
-        <div class="container">
+    <!-- CONTAINER CON GIOCO IN USCITA -->
+    <div>
+        <BachecaAds />
+    </div>
+    <!-- CONTAINER CON SFONDO violaPLaystaion PER LA PARTE RESTANTE DEL MAIN  -->
+    <div class="mainContainer container-fluid">
 
-            <!-- DISCLAIMER -->
-            <div>
-                Upcoming Stock
+        <!-- CONTAINER CON: "INFO" + "MOST POPULAR" + "LATEST GAME"-->
+        <div class="mainBox">
+
+            <!-- "INFO CONTAINER" -->
+            <div class="d-flex justify-content-between py-3">
+                <div v-for="element in benefits">
+                    <div class="info d-flex">
+                        <div>
+                            <div>#Simbolo#</div>
+                        </div>
+                        <div>
+                            <div> {{ element.title }} </div>
+                            <div> {{ element.subtitle }} </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- TITOLO GIOCO IN USCITA -->
-            <div>
-                <h3>
-                    Resident Evil 3
-                </h3>
-                <h3>
-                    Remake
-                </h3>
-            </div>
-            <!-- TASTO SHOP NOW -->
-            <div>
-                <a href="#">Shop Now</a>
+
+
+            <div class="d-flex justify-content-between py-3">
+                <!-- "MOST POPULAR" CONTAINER-->
+                <div class="cards">
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <div class="textOnCards">
+                        ciao
+                    </div>
+                </div>
+                <!-- LATEST GAME -->
+                <div class="cards">
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <div class="textOnCards">
+                        ciao
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
+
+
 </template>
 
 <style lang="scss" scoped>
 .mainContainer {
-    background-image: url("../../assets/bph/mainwallpaper.jpg");
-    background-size: cover;
-    height: 100vh;
-    .container {
-        width: 70%;
-        margin: 0 auto;
-        height: 100px;
-    }
+    width: 100%;
+    background-image: "../../assets/bph/assets/body-bg.jpg"
+}
 
+.mainBox {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 15px;
+    padding-top: 2%;
+    color: white;
+}
+
+.info {
+    widows: calc(100% / 4);
+}
+
+.cards {
+    width: calc((100% / 2) - 15px);
+    height: 45vh;
+    background-color: red;
+    position: relative;
+    .textOnCards {
+        position: absolute;
+        top: 33%;
+        right: 107px;
+    }
 }
 </style>

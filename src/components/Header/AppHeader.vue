@@ -30,9 +30,9 @@ export default {
 <template>
     <header>
         <!-- CONTENITORE PRINCIPALE HEADER: SEGMENTO 1 + SEGMENTO 2 -->
-        <div class="container-fluid bg-dark">
+        <div class="mainContainer container-fluid">
             <!-- SEGMENTO SUPERIORE HEADER -->
-            <div class="over d-flex justify-content-center align-items-center text-light py-1">
+            <div class="over d-flex justify-content-center align-items-center text-light py-3">
                 <div class="wishlist">
                     <div>
                         wishlist(0)
@@ -54,9 +54,9 @@ export default {
                     </div>
                 </div>
             </div>
-
+            <hr class="text-light">
             <!-- SEGMENTO INFERIORE HEADER -->
-            <div class="over d-flex justify-content-center align-items-center text-light py-1">
+            <div class="under d-flex justify-content-center align-items-center text-light py-1">
                 <div class="iconHDAX">
                     ciao
                 </div>
@@ -77,9 +77,11 @@ export default {
 </template>
 
 <style lang="scss">
-.over {
+.mainContainer {
+    background-color: #1D1427;
+    .over {
     width: 70%;
-    height: 7vh;
+    height: 3vh;
     margin: 0 auto;
     text-align: center;
 
@@ -112,6 +114,13 @@ export default {
         width: 80%;
         text-align: end;
     }
+}
+
+.under {
+    width: 70%;
+    height: 10vh;
+    margin: 0 auto;
+    text-align: center;
 
     .iconHDAX {
         width: 20%;
@@ -121,6 +130,7 @@ export default {
     .menuCentrale {
         width: 60%;
         background-color: aqua;
+
         ul {
             width: calc(100% / 6);
             list-style: none;
@@ -133,9 +143,12 @@ export default {
             }
         }
     }
+
     .moreIcons {
         width: 20%;
         background-color: coral;
     }
 }
+}
+
 </style>

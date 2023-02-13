@@ -16,6 +16,7 @@ export default {
                 'ShortCode',
                 'Features'
             ],
+            phoneNumber: "24/7 . 800-8754-987",
             store
         }
     },
@@ -35,7 +36,8 @@ export default {
 <template>
     <div>
         <AppHeader
-        :menuList="menuList"/>
+        :menuList="menuList"
+        :phoneNumber="phoneNumber"/>
     </div>
     <div>
         <AppMain />

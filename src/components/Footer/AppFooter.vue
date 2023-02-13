@@ -1,4 +1,5 @@
 <script>
+//Import da store.js
 import { store } from "../../store"
 
 export default {

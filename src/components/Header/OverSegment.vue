@@ -15,9 +15,6 @@ export default {
     methods: {
     },
     props: {
-        menuList: {
-            type: Array,
-        },
         phoneNumber: {
             type: String,
         }

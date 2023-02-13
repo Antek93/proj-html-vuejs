@@ -18,9 +18,6 @@ export default {
         menuList: {
             type: Array,
         },
-        phoneNumber: {
-            type: String,
-        }
     }
 
 

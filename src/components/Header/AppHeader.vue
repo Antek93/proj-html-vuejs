@@ -40,7 +40,6 @@ export default {
             
             <!-- SEGMENTO SUPERIORE: WISHLIST - NEED HELP ? - PHONE NUMBER -->
             <OverSegment
-            :menu-list="menuList"
             :phoneNumber="phoneNumber"
             />
             
@@ -50,14 +49,13 @@ export default {
             <!-- SEGMENTO INFERIORE: IMMAGINE - MENU NAVIGAZIONE - ICONE CERCA/PROFILO/CARRELLO   -->
             <UnderSegment
             :menu-list="menuList"
-            :phoneNumber="phoneNumber"
             />
         </div>
     </header>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .mainContainer {
-    background-color: #1D1427;   
+    background-color:#201424;
 }
 </style>

@@ -48,7 +48,7 @@ export default {
         <BachecaAds />
     </div>
     <!-- CONTAINER CON SFONDO violaPLaystaion PER LA PARTE RESTANTE DEL MAIN  -->
-    <div class="mainContainer container-fluid">
+    <div class="mainBackground container-fluid">
 
         <!-- CONTAINER CON: "INFO" + "MOST POPULAR" + "LATEST GAME"-->
         <div class="mainBox">
@@ -97,11 +97,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.mainContainer {
-    width: 100%;
-    background-image: "../../assets/bph/assets/body-bg.jpg"
+.mainBackground {
+    background-image: url('../../assets/bph/body-bg.jpg');
 }
-
 .mainBox {
     width: 80%;
     margin: 0 auto;

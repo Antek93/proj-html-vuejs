@@ -5,7 +5,6 @@ export default {
     name: 'AppHeader',
     data () {
         return {
-            msg: 'Ciao',
             store
         }
     },
@@ -14,13 +13,21 @@ export default {
     },
     methods: {
     },
+    props: {
+        menuList: {
+            type: Array,
+        },
+    }
+
     
 };
 </script>
 
 <template>
     <header>
-        
+        <div v-for="element in this.menuList">
+            {{ element }}
+        </div>
     </header>
 </template>
 

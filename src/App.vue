@@ -8,7 +8,14 @@ export default {
     name: 'ciao',
     data () {
         return {
-            msg: 'Ciao',
+            menuList: [
+                'Home',
+                'Shop',
+                'Blog',
+                'Media',
+                'ShortCode',
+                'Features'
+            ],
             store
         }
     },
@@ -26,9 +33,16 @@ export default {
 </script>
 
 <template>
-<AppHeader/>
-<AppMain />
-<AppFooter />
+    <div>
+        <AppHeader
+        :menuList="menuList"/>
+    </div>
+    <div>
+        <AppMain />
+    </div>
+    <div>
+        <AppFooter />
+    </div>
 </template>
 
 <style lang="scss">

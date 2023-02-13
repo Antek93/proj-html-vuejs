@@ -3,6 +3,7 @@
 import { store } from "../../store"
 import BachecaAds from "./MainPartials/BachecaAds.vue"
 import infoMain from "./MainPartials/infoMain.vue"
+import specialCategory from "./MainPartials/specialCategory.vue";
 
 export default {
     name: 'AppMain',
@@ -37,7 +38,8 @@ export default {
     },
     components: {
         BachecaAds,
-        infoMain
+        infoMain,
+        specialCategory
     }
 
 };
@@ -50,10 +52,15 @@ export default {
         <BachecaAds />
     </div>
     <!-- CONTAINER CON SFONDO violaPLaystaion PER LA PARTE RESTANTE DEL MAIN  -->
-    <div class="mainBackground container-fluid">
+    <div class="mainBackground container-fluid py-5">
 
         <!-- CONTAINER CON: "INFO" + "MOST POPULAR" + "LATEST GAME"-->
-        <infoMain />
+        <infoMain :benefits="benefits" />
+
+        <!-- CONTAINER SPECIAL CATERGORY -->
+        <specialCategory />
+
+        
 
     </div>
 
@@ -62,6 +69,7 @@ export default {
 
 <style lang="scss" scoped>
 .mainBackground {
+    width: 100%;
     background-image: url('../../assets/bph/body-bg.jpg');
 }
 </style>

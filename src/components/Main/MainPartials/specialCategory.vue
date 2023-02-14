@@ -71,8 +71,6 @@ export default {
     .tratto {
         border: 2px solid #c2c402;
         width: 7%;
-        display: flex;
-        justify-content: center;
         border-radius: 10px;
     }
 }

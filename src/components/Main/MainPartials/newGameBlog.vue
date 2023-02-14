@@ -32,7 +32,7 @@ export default {
         <div class="newsContainer d-flex justify-content-between text-white">
             <div class="news">
                 <div>
-                    <img src="" alt="">
+                    <img src="../../../assets/bph/Nisi-ut-aliquid-ex-ea-com-1400x878_t.jpg" alt="">
                 </div>
                 <div>
                     <div class="d-flex">
@@ -43,14 +43,14 @@ export default {
                             0 Comment
                         </div>
                     </div>
-                    <div>
+                    <div class="fw-bold">
                         Anyway REPS is a NYC agency repres enting photohraphers
                     </div>
                 </div>
             </div>
             <div class="news">
                 <div>
-                    <img src="" alt="">
+                    <img src="../../../assets/bph/Illo-inventore-veritatis-quasi-1400x878_t.jpg" alt="">
                 </div>
                 <div>
                     <div class="d-flex">
@@ -61,13 +61,13 @@ export default {
                             0 Comment
                         </div>
                     </div>
-                    <div>
+                    <div class="fw-bold">
                         Nasual risus suscipit Lorem Ipsum is simply text
                     </div>
                 </div>
             </div><div class="news">
                 <div>
-                    <img src="" alt="">
+                    <img src="../../../assets/bph/At-vero-eos-et-accusamus-1400x878_t.jpg" alt="">
                 </div>
                 <div>
                     <div class="d-flex">
@@ -78,7 +78,7 @@ export default {
                               0 Comment  
                         </div>
                     </div>
-                    <div>
+                    <div class="fw-bold">
                         Nostrum lesum Christum Lorem Ipsum is simply text
                     </div>
                 </div>
@@ -107,7 +107,7 @@ export default {
     .news {
         width: calc(33.3333333333% - 8px);
         border-radius: 0px;
-        height: 279px;
+        height: 270px;
         background-color: white;
         border: 0px;
         font-size: 13px;

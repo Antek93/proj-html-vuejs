@@ -1,18 +1,17 @@
 <script>
-//Import da store.js
-import { store } from "../../store"
 import BachecaAds from "./MainPartials/BachecaAds.vue"
 import infoMain from "./MainPartials/infoMain.vue"
 import mostPopular from "./MainPartials/mostPopular.vue"
 import specialCategory from "./MainPartials/specialCategory.vue"
 import discountCards from "./MainPartials/discountCards.vue"
+import ourProducts from "./MainPartials/ourProducts.vue"
+import dealOfTheDay from "./MainPartials/dealOfTheDay.vue"
+import teamInfo from "./MainPartials/teamInfo.vue"
 
 export default {
     name: 'AppMain',
     data() {
         return {
-            msg: 'Ciao',
-            store,
             benefits: [
                 {
                     title: "Free Delivery",
@@ -30,20 +29,61 @@ export default {
                     title: "Return Policy",
                     subtitle: "Support 24 hours a day"
                 }
-            ]
-        }
+            ],
+            slides: [
+                    {
+                        image: '../../../src/assets/bph/04-768x768.jpg',
+                        title: 'Shopping Mahjong conncet',
+                        price: '100.00',
+                    }, {
+                        image: '../../../src/assets/bph/01-768x768.jpg',
+                        title: 'BangBangShooting',
+                        price: '56.00',
+                    }, {
+                        image: '../../../src/assets/bph/03-768x768.jpg',
+                        title: 'Buddy and Lucky Solitaire',
+                        price: "74.00",
+                    }, {
+                        image: '../../../src/assets/bph/11-768x768.jpg',
+                        title: 'Taishou x Alice Epilogue',
+                        price: '160.00',
+                    },
+                    {
+                        image: '../../../src/assets/bph/01-768x768.jpg',
+                        title: 'BangBangShooting',
+                        price: '33.00',
+                    }, {
+                        image: '../../../src/assets/bph/05-768x768.jpg',
+                        title: 'Shopping Mahjong conncet',
+                        price: '19.00',
+                    }, {
+                        image: '../../../src/assets/bph/08-768x768.jpg',
+                        title: 'Taishou x Alice Epilogue',
+                        price: "28.00",
+                    }, {
+                        image: '../../../src/assets/bph/13-768x768.jpg',
+                        title: 'Buddy and Lucky Solitaire',
+                        price: '74.00',
+                    }
+                ],
+        }                         
+
     },
     created() {
 
     },
     methods: {
+        
     },
     components: {
         BachecaAds,
         infoMain,
         mostPopular,
         specialCategory,
-        discountCards
+        discountCards,
+        ourProducts,
+        dealOfTheDay,
+        teamInfo
     }
 
 };
@@ -55,6 +95,7 @@ export default {
     <div>
         <BachecaAds />
     </div>
+
     <!-- CONTAINER CON SFONDO violaPLaystaion PER LA PARTE RESTANTE DEL MAIN  -->
     <div class="mainBackground container-fluid py-5">
 
@@ -67,139 +108,17 @@ export default {
         <!-- CONTAINER SPECIAL CATERGORY -->
         <specialCategory />
 
-        <!-- CONTAINER OUR PRODUCTS -->
-        <div class="specialBox py-3 my-3 text-white">
-            <div class="d-flex justify-content-center">
-                <h1>
-                    Our Products
-                </h1>
-            </div>
-            <div class="d-flex justify-content-center my-3">
-                <div class="tratto"></div>
-            </div>
-            <div class="btnContainer d-flex justify-content-center align-items-center text-center">
-                <div>
-                    Featured
-                </div>
-                <div>
-                    New Arrival
-                </div>
-                <div>
-                    Best Sellers
-                </div>
-            </div>
-            <div class="onSale d-flex justify-content-between py-3 my-3">
-                <div class="product">
-                    <img src="../../assets/bph/04-768x768.jpg" alt="">
-                    <div class="blackOverlay">
-                        <div>
-                            <div>Battlefiled III</div>
-                            <div>Shop now</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="../../assets/bph/09-768x768.jpg" alt="">
-                    <div class="blackOverlay">
-                        <div>
-                            <div>Battlefiled III</div>
-                            <div>Shop now</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="../../assets/bph/03-768x768.jpg" alt="">
-                    <div class="blackOverlay">
-                        <div>
-                            <div>Battlefiled III</div>
-                            <div>Shop now</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="../../assets/bph/11-768x768.jpg" alt="">
-                    <div class="blackOverlay">
-                        <div>
-                            <div>Stars</div>
-                            <div>Battlefiled III</div>
-                            <div>Shop now</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- CONTAINER "OUR PRODUCTS" -->
+        <ourProducts :slides="slides"/>
 
         <!-- CONTAINER SCHEDE DISCOUNT  -->
         <discountCards />
 
         <!-- CONTAINER OUR PRODUCTS -->
-        <div class="specialBox py-3 my-3 text-white">
-            <div class="d-flex justify-content-center">
-                <h1>
-                    Deal Of The Day
-                </h1>
-            </div>
-            <div class="d-flex justify-content-center my-3">
-                <div class="tratto"></div>
-            </div>
-            <div class="btnContainer d-flex justify-content-center align-items-center text-center">
-                <div>
-                    1026 days
-                </div>
-                <div>
-                    13 hours
-                </div>
-                <div>
-                    24 mins
-                </div>
-                <div>
-                    17 secs
-                </div>
-            </div>
-            <div class="onSale d-flex justify-content-between py-3 my-3">
-                <div class="product">
-                    <img src="../../assets/bph/04-768x768.jpg" alt="">
-                    <div class="blackOverlay">
-                        <div>
-                            <div>Battlefiled III</div>
-                            <div>Shop now</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="../../assets/bph/09-768x768.jpg" alt="">
-                    <div class="blackOverlay">
-                        <div>
-                            <div>Battlefiled III</div>
-                            <div>Shop now</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="../../assets/bph/03-768x768.jpg" alt="">
-                    <div class="blackOverlay">
-                        <div>
-                            <div>Battlefiled III</div>
-                            <div>Shop now</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="../../assets/bph/11-768x768.jpg" alt="">
-                    <div class="blackOverlay">
-                        <div>
-                            <div>Stars</div>
-                            <div>Battlefiled III</div>
-                            <div>Shop now</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+        <dealOfTheDay />
 
-
-        
+        <!-- CONTAINER TEAM DI LAVORO -->
+        <teamInfo />
 
     </div>
 

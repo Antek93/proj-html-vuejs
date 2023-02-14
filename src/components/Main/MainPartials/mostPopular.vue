@@ -1,13 +1,10 @@
 <script>
-//Import da store.js
-import { store } from "../../../store"
 
 export default {
     name: 'mostPopular',
     data() {
         return {
             msg: 'Ciao',
-            store,
         }
     },
     created() {

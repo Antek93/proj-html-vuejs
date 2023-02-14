@@ -60,4 +60,6 @@ export default {
 .info {
     widows: calc(100% / 4);
 }
+
+
 </style>

@@ -3,7 +3,6 @@ export default {
     name: 'ourProducts',
     data() {
         return {
-            msg: 'Ciao',
             IndexUno: 0,
             IndexDue: 1,
             IndexTre: 2,

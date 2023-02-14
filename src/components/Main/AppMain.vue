@@ -7,6 +7,7 @@ import discountCards from "./MainPartials/discountCards.vue"
 import ourProducts from "./MainPartials/ourProducts.vue"
 import dealOfTheDay from "./MainPartials/dealOfTheDay.vue"
 import teamInfo from "./MainPartials/teamInfo.vue"
+import newGameBlog from "./MainPartials/newGameBlog"
 
 export default {
     name: 'AppMain',
@@ -83,7 +84,8 @@ export default {
         discountCards,
         ourProducts,
         dealOfTheDay,
-        teamInfo
+        teamInfo,
+        newGameBlog
     }
 
 };
@@ -115,10 +117,13 @@ export default {
         <discountCards />
 
         <!-- CONTAINER OUR PRODUCTS -->
-        <dealOfTheDay />
+        <dealOfTheDay :slides="slides" />
 
         <!-- CONTAINER TEAM DI LAVORO -->
         <teamInfo />
+
+        <!-- NEW GAME BLOG -->
+        <newGameBlog />
 
     </div>
 

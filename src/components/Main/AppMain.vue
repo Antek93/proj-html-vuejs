@@ -8,6 +8,7 @@ import ourProducts from "./MainPartials/ourProducts.vue"
 import dealOfTheDay from "./MainPartials/dealOfTheDay.vue"
 import teamInfo from "./MainPartials/teamInfo.vue"
 import newGameBlog from "./MainPartials/newGameBlog.vue"
+import sponsorIcon from "./MainPartials/sponsorIcon.vue"
 
 export default {
     name: 'AppMain',
@@ -85,7 +86,8 @@ export default {
         ourProducts,
         dealOfTheDay,
         teamInfo,
-        newGameBlog
+        newGameBlog,
+        sponsorIcon
     }
 
 };
@@ -125,6 +127,9 @@ export default {
         <!-- NEW GAME BLOG -->
         <newGameBlog />
 
+        <!-- SPONSORS ICONS -->
+        <sponsorIcon />
+
     </div>
 
 
@@ -134,49 +139,5 @@ export default {
 .mainBackground {
     width: 100%;
     background-image: url('../../assets/bph/body-bg.jpg');
-}
-
-.specialBox {
-    width: 80%;
-    margin: 0 auto;
-
-    .tratto {
-        border: 2px solid #c2c402;
-        width: 7%;
-        border-radius: 10px;
-    }
-}
-
-.btnContainer {
-    div {
-        padding: 10px;
-        width: calc((100% / 3) - 280px);
-        border: 1px solid white;
-    }
-}
-
-.onSale {
-    width: 100%;
-
-    .product {
-        width: calc((100% / 4) - 20px);
-        border-radius: 0px;
-        height: 280px;
-        background-color: white;
-        border: 0px;
-
-        img {
-            width: 100%;
-            height: 100%;
-        }
-
-        .blackOverlay {
-            width: 100%;
-            height: 79px;
-            background-color: #3700377a;
-            bottom: 0%;
-        }
-
-    }
 }
 </style>

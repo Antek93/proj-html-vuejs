@@ -71,9 +71,6 @@ export default {
     .splitter {
         width: 4%;
 
-        div {
-            cursor: none;
-        }
     }
 
     .needHelp {

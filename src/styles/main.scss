@@ -2,3 +2,8 @@
 @import "./partials/MainAttributes/MainAttributes.scss";
 @import "./partials/FooterAttributes/FooterAttributes.scss";
 @import "node_modules/bootstrap/scss/bootstrap";
+
+* {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 20px;
+}

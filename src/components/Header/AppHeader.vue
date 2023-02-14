@@ -58,5 +58,9 @@ export default {
 .mainContainer {
     background-color:#201424;
     --bs-gutter-x: 0rem;
+    padding-top: 12px;
+    hr {
+        margin: 2px 0;
+    }
 }
 </style>

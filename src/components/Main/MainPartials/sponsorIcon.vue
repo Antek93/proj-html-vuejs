@@ -19,19 +19,19 @@ export default {
 <template>
     <div class="sponsorBox d-flex justify-content-between">
         <div class="icon">
-            <img src="" alt="">
+            <img src="../../../assets/bph/brand-01.png" alt="">
         </div>
         <div class="icon">
-            <img src="" alt="">
+            <img src="../../../assets/bph/brand-02.png" alt="">
         </div>
         <div class="icon">
-            <img src="" alt="">
+            <img src="../../../assets/bph/brand-03.png" alt="">
         </div>
         <div class="icon">
-            <img src="" alt="">
+            <img src="../../../assets/bph/brand-04.png" alt="">
         </div>
         <div class="icon">
-            <img src="" alt="">
+            <img src="../../../assets/bph/brand-05.png" alt="">
         </div>
     </div>
 </template>
@@ -43,9 +43,8 @@ export default {
     height: 10vh;
 
     .icon {
-        width: calc((100% / 5) - 50px);
-        height: 100px;
-        background-color: red;
+        width: calc(20% - 50px);
+        height: 120%;
         img {
             width: 100%;
             height: 100%;

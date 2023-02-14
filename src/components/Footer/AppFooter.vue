@@ -83,8 +83,30 @@ export default {
             </div>
         </div>
         <hr>
-        <div>
-            
+        <div class="downFooter d-flex justify-content-between">
+            <div class="copyright">
+                <a href="#">Copyright</a>
+            </div>
+            <div class="creditCards d-flex justify-content-evenly">
+                <div class="payBox">
+                    <img src="../../assets/bph/american.png" alt="">
+                </div>
+                <div class="payBox">
+                    <img src="../../assets/bph/discover.png" alt="">
+                </div>
+              
+                <div class="payBox">
+                    <img src="../../assets/bph/mastercard.png" alt="">
+                </div>
+              
+                <div class="payBox">
+                    <img src="../../assets/bph/paypal.png" alt="">
+                </div>
+              
+                <div class="payBox">
+                    <img src="../../assets/bph/visa.png" alt="">
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -128,5 +150,30 @@ export default {
         border: 0.5px solid white;
     }
 
+    .downFooter {
+        width: 80%;
+        margin: 0 auto;
+        color: white;
+        div {
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+    .payBox {
+        width: calc((100% / 5) - 20px) ;
+        height: 80%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .copyright {
+        width: 75%;
+    }
+    .creditCards {
+        width: 25%;
+    }
 }
 </style>

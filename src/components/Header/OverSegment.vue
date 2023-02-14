@@ -25,7 +25,7 @@ export default {
 </script>
 
 <template> <!-- SEGMENTO SUPERIORE HEADER -->
-    <div class="over d-flex justify-content-center align-items-center text-light py-3">
+    <div class="over d-flex justify-content-center align-items-center py-3">
         <!-- WISHLIST -->
         <div class="wishlist">
             <div>
@@ -59,6 +59,7 @@ export default {
     height: 3vh;
     margin: 0 auto;
     text-align: center;
+    color: gray;
 
     .wishlist {
         width: 8%;

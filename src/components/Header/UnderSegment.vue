@@ -206,7 +206,7 @@ export default {
         </div>
 
         <!-- BLOCCO ICONE AGGIUNTIVE -->
-        <div class="moreIcons d-flex justify-content-center">
+        <div class="moreIcons d-flex justify-content-end">
             <div class="thisIcon">
                 <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
             </div>
@@ -268,7 +268,7 @@ export default {
     width: 20%;
 
     .thisIcon {
-        padding: 0px 13px;
+        padding: 0px 18px;
     }
 
 }

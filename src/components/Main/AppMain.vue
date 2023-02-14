@@ -7,7 +7,7 @@ import discountCards from "./MainPartials/discountCards.vue"
 import ourProducts from "./MainPartials/ourProducts.vue"
 import dealOfTheDay from "./MainPartials/dealOfTheDay.vue"
 import teamInfo from "./MainPartials/teamInfo.vue"
-import newGameBlog from "./MainPartials/newGameBlog"
+import newGameBlog from "./MainPartials/newGameBlog.vue"
 
 export default {
     name: 'AppMain',

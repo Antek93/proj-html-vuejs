@@ -1,5 +1,4 @@
 <script>
-import { store } from "./store"
 import AppMain from "./components/Main/AppMain.vue";
 import AppHeader from "./components/Header/AppHeader.vue";
 import AppFooter from "./components/Footer/AppFooter.vue"
@@ -8,7 +7,8 @@ export default {
     name: 'ciao',
     data () {
         return {
-            menuList: [
+            phoneNumber: "24/7 . 800-8754-987",
+            navigator: [
                 'Home',
                 'Shop',
                 'Blog',
@@ -37,8 +37,6 @@ export default {
                 'My account',
                 'About us'
             ],
-            phoneNumber: "24/7 . 800-8754-987",
-            store
         }
     },
     created () {
@@ -57,7 +55,7 @@ export default {
 <template>
     <div>
         <AppHeader
-        :menuList="menuList"
+        :navigator="navigator"
         :phoneNumber="phoneNumber"/>
     </div>
     <div>

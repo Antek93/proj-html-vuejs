@@ -116,6 +116,8 @@ export default {
     height: 45vh;
     background-image: url('../../assets/bph/footer-bg.png');
     background-size: cover;
+    --bs-gutter-x: 0rem;
+
 
     .footContainer {
         width: 80%;

@@ -57,5 +57,6 @@ export default {
 <style lang="scss" scoped>
 .mainContainer {
     background-color:#201424;
+    --bs-gutter-x: 0rem;
 }
 </style>

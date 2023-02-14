@@ -29,7 +29,7 @@ export default {
 
         <!-- ICONA IMMAGINE GAME HDAX  -->
         <div class="iconHDAX">
-            ciao
+            <img src="../../assets/bph/mob-logo.png" alt="">
         </div>
 
         <!-- NAVIGATORE CENTRALE  -->
@@ -57,7 +57,6 @@ export default {
 
     .iconHDAX {
         width: 20%;
-        background-color: coral;
     }
 
     .menuCentrale {

@@ -31,7 +31,7 @@ export default {
             <!-- "MOST POPULAR" CONTAINER-->
             <div class="cards">
                 <div>
-                    <img src="" alt="">
+                    <img src="../../../assets/bph/cms-banner-01.jpg" alt="">
                 </div>
                 <div class="textOnCards">
                     ciao
@@ -40,7 +40,7 @@ export default {
             <!-- LATEST GAME -->
             <div class="cards">
                 <div>
-                    <img src="" alt="">
+                    <img src="../../../assets/bph/cms-banner-02.jpg" alt="">
                 </div>
                 <div class="textOnCards">
                     ciao
@@ -65,6 +65,10 @@ export default {
     height: 45vh;
     background-color: red;
     position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+    }
 
     .textOnCards {
         position: absolute;

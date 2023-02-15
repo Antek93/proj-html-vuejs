@@ -15,7 +15,7 @@ import { faUser } from '@fortawesome/free-regular-svg-icons'
 import { faShoppingBag } from '@fortawesome/free-solid-svg-icons'
 import { faTruckFast } from '@fortawesome/free-solid-svg-icons'
 import { faSackDollar } from '@fortawesome/free-solid-svg-icons'
-import {faPercent} from '@fortawesome/free-solid-svg-icons'
+import { faPercent } from '@fortawesome/free-solid-svg-icons'
 import { faHandHoldingDollar } from '@fortawesome/free-solid-svg-icons'
 import { faHeart } from '@fortawesome/free-regular-svg-icons'
 import { faMaximize } from '@fortawesome/free-solid-svg-icons'
@@ -27,9 +27,12 @@ import { faLink } from '@fortawesome/free-solid-svg-icons'
 import { faPaperPlane } from '@fortawesome/free-regular-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faGooglePlusG} from '@fortawesome/free-brands-svg-icons'
+import { faGooglePlusG } from '@fortawesome/free-brands-svg-icons'
 import { faSkype } from '@fortawesome/free-brands-svg-icons'
-import { faInstagram} from '@fortawesome/free-brands-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faDiamond } from '@fortawesome/free-solid-svg-icons'
+
+
 
 library.add(faUserSecret,
     faMagnifyingGlass,
@@ -49,11 +52,12 @@ library.add(faUserSecret,
     faPaperPlane,
     faTwitter,
     faFacebook,
-faGooglePlusG,
-faSkype,
-faInstagram,
-    )
+    faGooglePlusG,
+    faSkype,
+    faInstagram,
+    faDiamond,
+)
 
 createApp(App)
-.component('font-awesome-icon', FontAwesomeIcon)
-.mount('#app')
+    .component('font-awesome-icon', FontAwesomeIcon)
+    .mount('#app')

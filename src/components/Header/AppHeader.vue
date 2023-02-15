@@ -33,7 +33,7 @@ export default {
 <template>
     <header>
         <!-- CONTENITORE PRINCIPALE HEADER: SEGMENTO 1 + SEGMENTO 2 -->
-        <div class="mainContainer container-fluid">
+        <div id="head" class="mainContainer container-fluid">
 
             <!-- SEGMENTO SUPERIORE: WISHLIST - NEED HELP ? - PHONE NUMBER -->
             <OverSegment :phoneNumber="phoneNumber" />

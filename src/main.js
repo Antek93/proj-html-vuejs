@@ -17,6 +17,9 @@ import { faTruckFast } from '@fortawesome/free-solid-svg-icons'
 import { faSackDollar } from '@fortawesome/free-solid-svg-icons'
 import {faPercent} from '@fortawesome/free-solid-svg-icons'
 import { faHandHoldingDollar } from '@fortawesome/free-solid-svg-icons'
+import { faHeart } from '@fortawesome/free-regular-svg-icons'
+import { faMaximize } from '@fortawesome/free-solid-svg-icons'
+import { faEye } from '@fortawesome/free-regular-svg-icons'
 
 
 library.add(faUserSecret,
@@ -26,7 +29,10 @@ library.add(faUserSecret,
     faTruckFast,
     faSackDollar,
     faPercent,
-    faHandHoldingDollar
+    faHandHoldingDollar,
+    faHeart,
+    faMaximize,
+    faEye
     )
 
 createApp(App)

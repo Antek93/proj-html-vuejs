@@ -39,35 +39,43 @@ export default {
             slides: [
                     {
                         image: '../../../src/assets/bph/04-768x768.jpg',
+                        rating: '★★★☆☆',
                         title: 'Shopping Mahjong conncet',
-                        price: '100.00',
+                        price: '100.00 - £1̶̶8̶̶0̶̶ ',
                     }, {
                         image: '../../../src/assets/bph/01-768x768.jpg',
+                        rating: '★★★★★',
                         title: 'BangBangShooting',
-                        price: '56.00',
+                        price: '83.00 - £90.00',
                     }, {
                         image: '../../../src/assets/bph/03-768x768.jpg',
+                        rating: '★★★☆☆',
                         title: 'Buddy and Lucky Solitaire',
                         price: "74.00",
                     }, {
                         image: '../../../src/assets/bph/11-768x768.jpg',
+                        rating: '★★★★☆',
                         title: 'Taishou x Alice Epilogue',
                         price: '160.00',
                     },
                     {
                         image: '../../../src/assets/bph/01-768x768.jpg',
+                        rating: '★★★★★',
                         title: 'BangBangShooting',
                         price: '33.00',
                     }, {
                         image: '../../../src/assets/bph/05-768x768.jpg',
+                        rating: '★★☆☆☆',
                         title: 'Shopping Mahjong conncet',
                         price: '19.00',
                     }, {
                         image: '../../../src/assets/bph/08-768x768.jpg',
+                        rating: '★★★☆☆',
                         title: 'Taishou x Alice Epilogue',
                         price: "28.00",
                     }, {
                         image: '../../../src/assets/bph/13-768x768.jpg',
+                        rating: '★★★★☆',
                         title: 'Buddy and Lucky Solitaire',
                         price: '74.00',
                     }

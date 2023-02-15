@@ -13,6 +13,42 @@ export default {
 
     },
     methods: {
+        mount(element) {
+            if (element == 'blockUno') {
+                let uno = document.getElementById('blockUno');
+                uno.classList.remove('invisible')
+            } else if (element == 'blockDue') {
+                let due = document.getElementById('blockDue');
+                due.classList.remove('invisible')
+
+            } else if (element == 'blockTre') {
+                let tre = document.getElementById('blockTre')
+                tre.classList.remove('invisible')
+            } else if (element == 'blockQuattro') {
+                let quattro = document.getElementById('blockQuattro')
+                quattro.classList.remove('invisible')
+            } else {
+                console.log ('errore')
+            }
+        },
+        dismount(element) {
+            if (element == 'blockUno') {
+                let uno = document.getElementById('blockUno');
+                uno.classList.add('invisible')
+            } else if (element == 'blockDue') {
+                let due = document.getElementById('blockDue');
+                due.classList.add('invisible')
+
+            } else if (element == 'blockTre') {
+                let tre = document.getElementById('blockTre')
+                tre.classList.add('invisible')
+            } else if (element == 'blockQuattro') {
+                let quattro = document.getElementById('blockQuattro')
+                quattro.classList.add('invisible')
+            } else {
+                console.log ('errore')
+            }
+        },
         clicForward: function () {
 
             let nextArrow = document.getElementById('next');
@@ -101,40 +137,94 @@ export default {
             </button>
         </div>
         <div class="onSale d-flex justify-content-between py-3 my-3">
-            <div class="product">
+            <div @mouseleave="dismount('blockUno')"  @mouseover="mount('blockUno')" class="product">
                 <img :src="slides[IndexUno].image" alt="">
                 <div class="blackOverlay">
-                    <div>
+                    <div class="infoItems">
+                        <div class="golden">{{ slides[IndexUno].rating }}</div>
                         <div>{{ slides[IndexUno].title }}</div>
-                        <div>£{{ slides[IndexUno].price }}</div>
+                        <div class="golden">£{{ slides[IndexUno].price }}</div>
                     </div>
                 </div>
+                <div id="blockUno" class=" invisible product-interation-box d-flex justify-content-between">
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-solid fa-bag-shopping" />
+                    </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-regular fa-heart" /> </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-solid fa-maximize" />
+                    </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-regular fa-eye" /> </button>
+                </div>
             </div>
-            <div class="product">
+            <div @mouseleave="dismount('blockDue')" @mouseover="mount('blockDue')" class="product">
                 <img :src="slides[IndexDue].image" alt="">
                 <div class="blackOverlay">
-                    <div>
+                    <div class="infoItems">
+                        <div class="golden">{{ slides[IndexDue].rating }}</div>
                         <div>{{ slides[IndexDue].title }}</div>
-                        <div>£{{ slides[IndexDue].price }}</div>
+                        <div class="golden">£{{ slides[IndexDue].price }}</div>
                     </div>
                 </div>
+                <div id="blockDue" class="invisible product-interation-box d-flex justify-content-between">
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-solid fa-bag-shopping" />
+                    </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-regular fa-heart" /> </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-solid fa-maximize" />
+                    </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-regular fa-eye" /> </button>
+                </div>
             </div>
-            <div class="product">
+            <div @mouseleave="dismount('blockTre')" @mouseover="mount('blockTre')" class="product">
                 <img :src="slides[IndexTre].image" alt="">
                 <div class="blackOverlay">
-                    <div>
+                    <div class="infoItems">
+                        <div class="golden">{{ slides[IndexTre].rating }}</div>
                         <div>{{ slides[IndexTre].title }}</div>
-                        <div>£{{ slides[IndexTre].price }}</div>
+                        <div class="golden">£{{ slides[IndexTre].price }}</div>
                     </div>
                 </div>
+                <div id="blockTre" class="invisible product-interation-box d-flex justify-content-between">
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-solid fa-bag-shopping" />
+                    </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-regular fa-heart" /> </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-solid fa-maximize" />
+                    </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-regular fa-eye" /> </button>
+                </div>
             </div>
-            <div class="product">
+            <div @mouseleave="dismount('blockQuattro')" @mouseover="mount('blockQuattro')" class="product">
                 <img :src="slides[IndexQuattro].image" alt="">
                 <div class="blackOverlay">
-                    <div>
+                    <div class="infoItems">
+                        <div class="golden">{{ slides[IndexQuattro].rating }}</div>
                         <div>{{ slides[IndexQuattro].title }}</div>
-                        <div>£{{ slides[IndexQuattro].price }}</div>
+                        <div class="golden">£{{ slides[IndexQuattro].price }}</div>
                     </div>
+                </div>
+                <div id="blockQuattro" class="invisible product-interation-box d-flex justify-content-between">
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-solid fa-bag-shopping" />
+                    </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-regular fa-heart" />
+                    </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-solid fa-maximize" />
+                    </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-regular fa-eye" />
+                    </button>
                 </div>
             </div>
             <div>
@@ -168,8 +258,9 @@ export default {
 
 .btnContainer {
     background-color: none;
+
     .buttonz {
-        width: calc(33.3333333333% - 221px);
+        width: calc(33.3333333333% - 220px);
         background-color: inherit;
         padding: 12px 38px;
         font-weight: bold;
@@ -178,8 +269,9 @@ export default {
         border: 0.5px solid rgba(128, 128, 128, 0.218);
         color: white;
     }
+
     .buttonz:hover {
-        color:#F9AA01;
+        color: #F9AA01;
     }
 }
 
@@ -202,8 +294,48 @@ export default {
         .blackOverlay {
             width: 100%;
             height: 79px;
-            background-color: #3700377a;
+            background-color: #1e001e;
             bottom: 0%;
+
+            .infoItems {
+                padding-left: 10px;
+
+                div {
+                    font-size: 17px;
+                    letter-spacing: 1px;
+
+                }
+
+                .golden {
+                    color: #F9AA01;
+                }
+            }
+        }
+
+        .product-interation-box {
+            position: absolute;
+            width: 23.3%;
+            height: 33px;
+            z-index: 2;
+            background-color: #1e001e;
+            bottom: -21%;
+            color: white;
+            text-align: center;
+
+
+            .productInteration {
+                width: 26%;
+                height: 107%;
+                border: 1px solid black;
+                color: white;
+                background-color: inherit;
+                padding: 4px;
+                .icn:hover {
+                    color: #F9AA01;
+                }
+
+            }
+
         }
 
     }
@@ -232,5 +364,9 @@ export default {
 
 .hidden {
     visibility: hidden;
+}
+
+.invisible {
+    display: none;
 }
 </style>

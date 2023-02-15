@@ -320,7 +320,7 @@ export default {
 
         .product-interation-box {
             position: absolute;
-            width: 23.3%;
+            width: 23.5%;
             height: 33px;
             z-index: 2;
             background-color: #1e001e;

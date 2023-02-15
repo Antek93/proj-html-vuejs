@@ -202,7 +202,7 @@ export default {
         .iconeSospese {
             position: absolute;
             top: 41%;
-            left: 36%;
+            left: 41%;
             transform: transform(-50%, -50%);
 
             .iconContainer {
@@ -216,6 +216,10 @@ export default {
                 }
                 .icn-due {
                     padding: 15px;
+                }
+                .icn:hover, .icn-due:hover {
+                    cursor: pointer;
+                    color: #F9AA01;
                 }
             }
 

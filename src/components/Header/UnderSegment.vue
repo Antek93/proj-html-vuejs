@@ -135,7 +135,7 @@ export default {
                         features.classList.add('invisible');
                     }
                 }
-            }, 1000);
+            }, 500);
         },
     },
     props: {
@@ -293,7 +293,7 @@ export default {
     height: 102px;
     background-color: #201424;
     position: absolute;
-    top: 17.5%;
+    top: 15.5%;
     margin: 0;
     text-align: left;
     border: 1px solid gray;

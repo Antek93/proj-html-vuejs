@@ -17,7 +17,7 @@ export default {
     },
     components: {
     },
-    props : {
+    props: {
         benefits: {
             type: Array,
         }
@@ -35,11 +35,15 @@ export default {
             <div v-for="element in benefits">
                 <div class="info d-flex">
                     <div>
-                        <div>#Simbolo#</div>
+                        <font-awesome-icon class="simbolo" :icon="`${element.icon}`" />
                     </div>
                     <div>
-                        <div> {{ element.title }} </div>
-                        <div> {{ element.subtitle }} </div>
+                        <div class="infoTitle">
+                            {{ element.title }}
+                        </div>
+                        <div class="infoSubtitle">
+                            {{ element.subtitle }}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -48,7 +52,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
 .mainBox {
     width: 80%;
     margin: 0 auto;
@@ -59,7 +62,28 @@ export default {
 
 .info {
     widows: calc(100% / 4);
+
+    .simbolo {
+        font-size: 40px;
+        padding: 4px 16px;
+
+    }
+
+    .infoTitle {
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+
+    }
+
+    .infoSubtitle {
+        font-size: 15px;
+        color: gray;
+        letter-spacing: 1px;
+    }
 }
-
-
+.info:hover {
+        color: rgb(249, 207, 0);
+        cursor: pointer;
+    }
 </style>

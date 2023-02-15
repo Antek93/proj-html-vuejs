@@ -13,8 +13,21 @@ import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { faUser } from '@fortawesome/free-regular-svg-icons'
 import { faShoppingBag } from '@fortawesome/free-solid-svg-icons'
-/* add icons to the library */
-library.add(faUserSecret, faMagnifyingGlass, faUser, faShoppingBag)
+import { faTruckFast } from '@fortawesome/free-solid-svg-icons'
+import { faSackDollar } from '@fortawesome/free-solid-svg-icons'
+import {faPercent} from '@fortawesome/free-solid-svg-icons'
+import { faHandHoldingDollar } from '@fortawesome/free-solid-svg-icons'
+
+
+library.add(faUserSecret,
+    faMagnifyingGlass,
+    faUser,
+    faShoppingBag,
+    faTruckFast,
+    faSackDollar,
+    faPercent,
+    faHandHoldingDollar
+    )
 
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)

@@ -17,19 +17,23 @@ export default {
             benefits: [
                 {
                     title: "Free Delivery",
-                    subtitle: "Free Shipping On All Order"
+                    subtitle: "Free Shipping On All Order",
+                    icon: "fa-solid fa-truck-fast"
                 },
                 {
                     title: "Money Return",
-                    subtitle: "Back Guarantee in 7 days"
+                    subtitle: "Back Guarantee in 7 days",
+                    icon: "fa-solid fa-sack-dollar",
                 },
                 {
                     title: "Member Discount",
-                    subtitle: "On every order over $130.00"
+                    subtitle: "On every order over $130.00",
+                    icon: 'fa-solid fa-percent',
                 },
                 {
                     title: "Return Policy",
-                    subtitle: "Support 24 hours a day"
+                    subtitle: "Support 24 hours a day",
+                    icon: 'fa-solid fa-hand-holding-dollar',
                 }
             ],
             slides: [

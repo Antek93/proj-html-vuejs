@@ -83,8 +83,7 @@ export default {
     top: 88%;
     z-index: 4;
     left: 92%;
-    color: black;
-    border: 3px solid black;
+    border: 3px solid #201424;
     -moz-transform: rotate(45deg) skew(10deg, 10deg);
     -webkit-transform: rotate(45deg) skew(10deg, 10deg);
     -ms-transform: rotate(45deg) skew(10deg, 10deg);
@@ -92,17 +91,16 @@ export default {
     transform: rotate(45deg) skew(10deg, 10deg);
 
     .miniArrow {
-        color: black;
         a {
             color: orange;
             text-decoration: none;
-            
+
         }
+
         .diamond {
             font-size: 39px;
             transform: rotate(54deg) skew(10deg, 351deg);
-            color: black;
-
+            color: #201424;
         }
 
     }

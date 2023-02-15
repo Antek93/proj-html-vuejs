@@ -51,7 +51,7 @@ export default {
     <div class="blogBox py-4 text-white">
         <div class="d-flex justify-content-center">
             <h1>
-                Our Products
+                New Game Blog
             </h1>
         </div>
         <div class="trattoBox d-flex justify-content-center">
@@ -195,7 +195,7 @@ export default {
         position: relative;
 
         .blogText {
-            font-size: 19px;
+            font-size: 17px;
             font-weight: 200;
         }
 

@@ -108,6 +108,9 @@ export default {
     props: {
         slides: {
             type: Array,
+        },
+        photos: {
+            type: Array,
         }
     }
 
@@ -141,7 +144,7 @@ export default {
         </div>
         <div class="onSale d-flex justify-content-between py-3 my-3">
             <div @mouseleave="dismount('blockUno')"  @mouseover="mount('blockUno')" class="product">
-                <img :src="slides[IndexUno].image" alt="">
+                <img :src="photos[IndexUno].image" alt="">
                 <div class="blackOverlay">
                     <div class="infoItems">
                         <div class="golden">{{ slides[IndexUno].rating }}</div>
@@ -163,7 +166,7 @@ export default {
                 </div>
             </div>
             <div @mouseleave="dismount('blockDue')" @mouseover="mount('blockDue')" class="product">
-                <img :src="slides[IndexDue].image" alt="">
+                <img :src="photos[IndexDue].image" alt="">
                 <div class="blackOverlay">
                     <div class="infoItems">
                         <div class="golden">{{ slides[IndexDue].rating }}</div>
@@ -185,7 +188,7 @@ export default {
                 </div>
             </div>
             <div @mouseleave="dismount('blockTre')" @mouseover="mount('blockTre')" class="product">
-                <img :src="slides[IndexTre].image" alt="">
+                <img :src="photos[IndexTre].image" alt="">
                 <div class="blackOverlay">
                     <div class="infoItems">
                         <div class="golden">{{ slides[IndexTre].rating }}</div>
@@ -207,7 +210,7 @@ export default {
                 </div>
             </div>
             <div @mouseleave="dismount('blockQuattro')" @mouseover="mount('blockQuattro')" class="product">
-                <img :src="slides[IndexQuattro].image" alt="">
+                <img :src="photos[IndexQuattro].image" alt="">
                 <div class="blackOverlay">
                     <div class="infoItems">
                         <div class="golden">{{ slides[IndexQuattro].rating }}</div>

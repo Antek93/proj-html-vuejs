@@ -138,8 +138,8 @@ export default {
                 </div>
             </div>
             <div>
-                <button id="previous" v-on:click="clicBackward()" class="prev button"> ← </button>
-                <button id="next" v-on:click="clicForward()" class="next button"> → </button>
+                <button id="previous" v-on:click="clicBackward()" class="prev button"> &lt </button>
+                <button id="next" v-on:click="clicForward()" class="next button"> > </button>
             </div>
         </div>
     </div>
@@ -210,7 +210,7 @@ export default {
 }
 
 .prev {
-    left: -2%;
+    left: -2.52%;
 }
 
 .next {
@@ -218,10 +218,16 @@ export default {
 }
 
 .button {
-    top: 50%;
-    padding: 1px 10px;
+    top: 59%;
+    padding: 1px 13px;
     position: absolute;
     transform: translate(-50%, -50%);
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background-color: inherit;
+    color: white;
+    border: 1px solid white;
 }
 
 .hidden {

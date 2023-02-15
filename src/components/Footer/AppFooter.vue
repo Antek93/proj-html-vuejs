@@ -61,22 +61,27 @@ export default {
                 <div class="newsletter">
                     <div>Our Newsletter</div>
                     <p>There are many variations of passages of <br> form humour or randomised</p>
-                    <input type="text">
-                    <div class="icone">
+                    <form @submit.prevent class="inputContainer">
+                        <input type="text">
+                        <button>
+                            <font-awesome-icon class="paper" icon="fa-regular fa-paper-plane" />
+                        </button>
+                    </form>
+                    <div class="icone d-flex justify-content-start align-items-baseline">
                         <div>
-
+                            <font-awesome-icon icon="fa-brands fa-facebook" />
                         </div>
                         <div>
-
+                            <font-awesome-icon icon="fa-brands fa-twitter" />
                         </div>
                         <div>
-
+                            <font-awesome-icon icon="fa-brands fa-google-plus-g" />
                         </div>
                         <div>
-
+                            <font-awesome-icon icon="fa-brands fa-skype" />
                         </div>
                         <div>
-
+                            <font-awesome-icon icon="fa-brands fa-instagram" />
                         </div>
                     </div>
                 </div>
@@ -113,7 +118,6 @@ export default {
 
 <style lang="scss" scoped>
 .container-fluid {
-    height: 50vh;
     background-image: url('../../assets/bph/footer-bg.png');
     background-size: cover;
     --bs-gutter-x: 0rem;
@@ -126,6 +130,7 @@ export default {
         ul {
             list-style: none;
             padding: 2px 0px;
+            height: 17px;
 
             li {
 
@@ -190,15 +195,48 @@ export default {
     }
 }
 
-.ulStyle {
-    height: 17px;
-}
+// .ulStyle {
+//     height: 17px;
+// }
 
 p {
     font-size: 17px;
 }
 
-// #hrStyle {
-//     margin-top: 101px;
-// }
+.inputContainer {
+    position: relative;
+
+    input {
+        width: 270px;
+    }
+
+    button {
+        width: 38px;
+        height: 32px;
+        border: none;
+        position: absolute;
+        top: 3.9%;
+        left: 231px;
+        z-index: 1;
+        background-color: inherit;
+    }
+
+    .paper {
+        top: 19%;
+        position: absolute;
+        left: 8%;
+        color: black;
+    }
+
+}
+
+.icone {
+    div {
+        width: calc((100% / 5) - 15px);
+    }
+    div:hover {
+        color: rgb(249, 207, 0);
+        cursor: pointer;
+    }
+}
 </style>

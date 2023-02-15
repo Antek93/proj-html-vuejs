@@ -208,12 +208,12 @@ export default {
         <!-- BLOCCO ICONE AGGIUNTIVE -->
         <div class="moreIcons d-flex justify-content-end">
             <div class="thisIcon">
-                <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+                <font-awesome-icon icon="hov fa-solid fa-magnifying-glass" />
             </div>
             <div class="thisIcon">
-                <font-awesome-icon icon="fa-regular fa-user" />
+                <font-awesome-icon icon="hov fa-regular fa-user" />
             </div>
-            <div class="bagShop thisIcon d-flex align-items-center">
+            <div class="bagShop thisIcon d-flex align-items-center hov">
                 <font-awesome-icon icon="fa-solid fa-bag-shopping" />
                 <div class="priceCart"> (0) £0.00 </div>
             </div>
@@ -253,7 +253,6 @@ export default {
                 text-decoration: none;
                 color: white;
                 font-size: 21px;
-                // rgb(249, 207, 0);
 
             }
 
@@ -269,7 +268,9 @@ export default {
 
     .thisIcon {
         padding: 0px 18px;
+        cursor: pointer;
     }
+
 
 }
 
@@ -296,6 +297,7 @@ export default {
     margin: 0;
     text-align: left;
     border: 1px solid gray;
+    z-index: 3;
 
     ul {
         list-style: none;

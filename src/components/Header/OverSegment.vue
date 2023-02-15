@@ -67,6 +67,12 @@ export default {
         div {
             cursor: pointer;
         }
+
+        div:hover {
+            color: white;
+        }
+
+
     }
 
     .splitter {
@@ -79,7 +85,10 @@ export default {
 
         div {
             cursor: pointer;
+        }
 
+        div:hover {
+            color: white;
         }
     }
 

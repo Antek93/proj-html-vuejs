@@ -99,6 +99,25 @@ export default {
                     image: '../../../src/assets/bph/13-768x768.jpg',
                 }
             ],
+            team: [
+                {
+                    image: '../../../src/assets/bph/t2-1-100x100_left.jpg',
+                    name: 'Luies Charls',
+                    job: '   (Web Designer)'
+                }, {
+                    image: '../../../src/assets/bph/t4-1-100x100_left.jpg',
+                    name: 'Mark Harry',
+                    job: '   (Front-end Developer)',
+                }, {
+                    image: '../../../src/assets/bph/t5-1-100x100_left.jpg',
+                    name: 'Harry Mark',
+                    job: '   (Project Manager)',
+                }, {
+                    image: '',
+                    name: '',
+                    job: '',
+                }
+            ],
 
         }
 
@@ -156,7 +175,8 @@ export default {
         :photos="photos"/>
 
         <!-- CONTAINER TEAM DI LAVORO -->
-        <teamInfo />
+        <teamInfo
+        :team="team"/>
 
         <!-- NEW GAME BLOG -->
         <newGameBlog />
@@ -173,5 +193,6 @@ export default {
 .mainBackground {
     width: 100%;
     background-image: url('../../assets/bph/body-bg.jpg');
+    padding: 0px;
 }
 </style>

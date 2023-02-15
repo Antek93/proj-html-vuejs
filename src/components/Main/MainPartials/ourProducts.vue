@@ -86,17 +86,17 @@ export default {
                 Our Products
             </h1>
         </div>
-        <div class="d-flex justify-content-center my-3">
+        <div class="trattoBox d-flex justify-content-center">
             <div class="tratto"></div>
         </div>
         <div class="btnContainer d-flex justify-content-center align-items-center text-center">
-            <button v-on:click="clicBackward()">
+            <button class="buttonz" v-on:click="clicBackward()">
                 Featured
             </button>
-            <button v-on:click="clicForward()">
+            <button class="buttonz" v-on:click="clicForward()">
                 New Arrival
             </button>
-            <button v-on:click="clicBackward()">
+            <button class="buttonz" v-on:click="clicBackward()">
                 Best Sellers
             </button>
         </div>
@@ -150,18 +150,36 @@ export default {
     width: 80%;
     margin: 0 auto;
 
-    .tratto {
-        border: 2px solid #c2c402;
-        width: 7%;
-        border-radius: 10px;
+    h1 {
+        letter-spacing: 4px;
+    }
+
+    .trattoBox {
+        margin-bottom: 34px;
+        margin-top: 4px;
+
+        .tratto {
+            width: 7.5%;
+            border: 2px solid #F9AA01;
+            border-radius: 10px;
+        }
     }
 }
 
 .btnContainer {
-    div {
-        padding: 10px;
-        width: calc((100% / 3) - 280px);
-        border: 1px solid white;
+    background-color: none;
+    .buttonz {
+        width: calc(33.3333333333% - 221px);
+        background-color: inherit;
+        padding: 12px 38px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 21px;
+        border: 0.5px solid rgba(128, 128, 128, 0.218);
+        color: white;
+    }
+    .buttonz:hover {
+        color:#F9AA01;
     }
 }
 
@@ -203,7 +221,7 @@ export default {
     top: 50%;
     padding: 1px 10px;
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .hidden {

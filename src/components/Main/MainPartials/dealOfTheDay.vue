@@ -138,7 +138,7 @@ export default {
             <button class="buttonz" v-on:click="clicBackward()">
                 24 mins
             </button>
-            <button class="buttonz" v-on:click="clicBackward()">
+            <button class="buttonz" v-on:click="clicForward()">
                 17 secs
             </button>
         </div>

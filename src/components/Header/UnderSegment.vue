@@ -172,7 +172,7 @@ export default {
         <div @mouseleave="build('Shop')" id="shop" class="menuCollapse invisible">
             <ul>
                 <li><a href="#">Acquista</a></li>
-                <li><a href="#">Regala ad un amico</a></li>
+                <li><a href="#">Vendi Usato</a></li>
                 <li><a href="#">Carrello</a></li>
             </ul>
         </div>

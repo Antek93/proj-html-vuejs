@@ -20,7 +20,10 @@ import { faHandHoldingDollar } from '@fortawesome/free-solid-svg-icons'
 import { faHeart } from '@fortawesome/free-regular-svg-icons'
 import { faMaximize } from '@fortawesome/free-solid-svg-icons'
 import { faEye } from '@fortawesome/free-regular-svg-icons'
-
+import { faCalendarDays } from '@fortawesome/free-solid-svg-icons'
+import { faComments } from '@fortawesome/free-solid-svg-icons'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faUserSecret,
     faMagnifyingGlass,
@@ -32,7 +35,11 @@ library.add(faUserSecret,
     faHandHoldingDollar,
     faHeart,
     faMaximize,
-    faEye
+    faEye,
+    faCalendarDays,
+    faComments,
+    faPlus,
+    faLink,
     )
 
 createApp(App)

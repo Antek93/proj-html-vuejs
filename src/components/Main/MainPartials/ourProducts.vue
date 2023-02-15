@@ -344,11 +344,17 @@ export default {
 .prev {
     left: -2.52%;
 }
-
+.prev:hover {
+    border: 1px solid #F9AA01;
+    color: #F9AA01;
+}
 .next {
     right: -4%;
 }
-
+.next:hover {
+    border: 1px solid #F9AA01;
+    color: #F9AA01;
+}
 .button {
     top: 59%;
     padding: 1px 13px;

@@ -51,8 +51,8 @@ export default {
         },
         clicForward: function () {
 
-            let nextArrow = document.getElementById('next');
-            let previousArrow = document.getElementById('previous');
+            let nextArrow = document.getElementById('nextArr');
+            let previousArrow = document.getElementById('prevArr');
             if (this.IndexUno == 0) {
 
                 this.IndexUno = 4
@@ -77,8 +77,8 @@ export default {
         },
         clicBackward: function () {
 
-            let nextArrow = document.getElementById('next');
-            let previousArrow = document.getElementById('previous');
+            let nextArrow = document.getElementById('nextArr');
+            let previousArrow = document.getElementById('prevArr');
 
             if (this.IndexUno == 4) {
 
@@ -234,8 +234,8 @@ export default {
                 </div>
             </div>
             <div>
-                <button id="previous" v-on:click="clicBackward()" class="prev button"> &lt </button>
-                <button id="next" v-on:click="clicForward()" class="next button"> > </button>
+                <button id="prevArr" v-on:click="clicBackward()" class="prev button"> &lt </button>
+                <button id="nextArr" v-on:click="clicForward()" class="next button"> > </button>
             </div>
         </div>
     </div>
@@ -350,9 +350,16 @@ export default {
 .prev {
     left: -2.52%;
 }
-
+.prev:hover {
+    border: 1px solid #F9AA01;
+    color: #F9AA01;
+}
 .next {
     right: -4%;
+}
+.next:hover {
+    border: 1px solid #F9AA01;
+    color: #F9AA01;
 }
 
 .button {

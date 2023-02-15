@@ -1,7 +1,7 @@
 <script>
 
 export default {
-    name: 'discountCards',
+    name: 'mostPopular',
     data() {
         return {
             msg: 'Ciao',
@@ -14,7 +14,7 @@ export default {
     },
     components: {
     },
-    props : {
+    props: {
         benefits: {
             type: Array,
         }
@@ -31,19 +31,33 @@ export default {
             <!-- "MOST POPULAR" CONTAINER-->
             <div class="cards">
                 <div>
-                    <img src="../../../assets/bph/cms-banner-01.jpg" alt="">
+                    <img src="../../../assets/bph/cms-banner-03.jpg" alt="">
                 </div>
-                <div class="textOnCards">
-                    ciao
+                <div class="adContainer">
+                    <div class="goldenAd"></div>
+                    <div class="titleBanner">20% Discount</div>
+                </div>
+                <div class="adTitle">
+                    <div class="fw-bold">
+                        Dragon's Dogma<br>
+                        Video Game
+                    </div>
                 </div>
             </div>
             <!-- LATEST GAME -->
             <div class="cards">
                 <div>
-                    <img src="../../../assets/bph/cms-banner-02.jpg" alt="">
+                    <img src="../../../assets/bph/cms-banner-04.jpg" alt="">
                 </div>
-                <div class="textOnCards">
-                    ciao
+                <div class="adContainer">
+                    <div class="goldenAd"></div>
+                    <div class="titleBanner">30% Discount</div>
+                </div>
+                <div class="adTitle">
+                    <div class="fw-bold">
+                        World of Tanks <br>
+                        New Game
+                    </div>
                 </div>
             </div>
         </div>
@@ -51,7 +65,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
 .mainBox {
     width: 80%;
     margin: 0 auto;
@@ -63,17 +76,62 @@ export default {
 .cards {
     width: calc((100% / 2) - 15px);
     height: 45vh;
-    background-color: red;
     position: relative;
+
     img {
         width: 100%;
         height: 100%;
+        filter: brightness(0.8);
     }
 
     .textOnCards {
         position: absolute;
         top: 33%;
         right: 107px;
+
+
+    }
+
+    .adContainer {
+        position: absolute;
+        top: 26%;
+        left: 46%;
+
+        .goldenAd {
+            width: 219px;
+            height: 50px;
+            transform: skew(340deg);
+            background-color: #F9AA01;
+        }
+
+        .titleBanner {
+            bottom: -1%;
+            left: 8.5%;
+            font-weight: bold;
+            position: absolute;
+            font-size: 39px;
+            color: #171717;
+            font-size: 34px;
+            font-style: italic;
+            letter-spacing: 2px;
+        }
+    }
+
+    .adTitle {
+        position: absolute;
+        top: 42%;
+        left: 44%;
+
+        div {
+            font-size: 41px;
+            letter-spacing: 3px;
+
+            br {
+                display: block;
+                content: "";
+                margin-top: -22px;
+            }
+        }
     }
 }
 </style>

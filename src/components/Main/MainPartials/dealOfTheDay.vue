@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: 'dealOfTheDay',
+    name: 'ourProducts',
     data() {
         return {
             IndexUno: 0,
@@ -13,10 +13,46 @@ export default {
 
     },
     methods: {
+        mount(element) {
+            if (element == 'blockUno') {
+                let uno = document.getElementById('Uno');
+                uno.classList.remove('invisible')
+            } else if (element == 'blockDue') {
+                let due = document.getElementById('Due');
+                due.classList.remove('invisible')
+
+            } else if (element == 'blockTre') {
+                let tre = document.getElementById('Tre')
+                tre.classList.remove('invisible')
+            } else if (element == 'blockQuattro') {
+                let quattro = document.getElementById('Quattro')
+                quattro.classList.remove('invisible')
+            } else {
+                console.log ('errore')
+            }
+        },
+        dismount(element) {
+            if (element == 'blockUno') {
+                let uno = document.getElementById('Uno');
+                uno.classList.add('invisible')
+            } else if (element == 'blockDue') {
+                let due = document.getElementById('Due');
+                due.classList.add('invisible')
+
+            } else if (element == 'blockTre') {
+                let tre = document.getElementById('Tre')
+                tre.classList.add('invisible')
+            } else if (element == 'blockQuattro') {
+                let quattro = document.getElementById('Quattro')
+                quattro.classList.add('invisible')
+            } else {
+                console.log ('errore')
+            }
+        },
         clicForward: function () {
 
-            let nexArrow = document.getElementById('nex');
-            let preArrow = document.getElementById('pre');
+            let nextArrow = document.getElementById('next');
+            let previousArrow = document.getElementById('previous');
             if (this.IndexUno == 0) {
 
                 this.IndexUno = 4
@@ -33,16 +69,16 @@ export default {
             };
 
             if (this.IndexQuattro == 3) {
-                nexArrow.classList.add('hide')
-                preArrow.classList.remove('hide')
+                nextArrow.classList.add('hidden')
+                previousArrow.classList.remove('hidden')
                 this.IndexQuattro = 7
             }
 
         },
         clicBackward: function () {
 
-            let nexArrow = document.getElementById('nex');
-            let preArrow = document.getElementById('pre');
+            let nextArrow = document.getElementById('next');
+            let previousArrow = document.getElementById('previous');
 
             if (this.IndexUno == 4) {
 
@@ -60,8 +96,8 @@ export default {
             };
 
             if (this.IndexQuattro == 7) {
-                nexArrow.classList.remove('hide')
-                preArrow.classList.add('hide')
+                nextArrow.classList.remove('hidden')
+                previousArrow.classList.add('hidden')
                 this.IndexQuattro = 3
             }
         },
@@ -86,63 +122,117 @@ export default {
                 Deal Of The Day
             </h1>
         </div>
-        <div class="d-flex justify-content-center my-3">
+        <div class="trattoBox d-flex justify-content-center">
             <div class="tratto"></div>
         </div>
         <div class="btnContainer d-flex justify-content-center align-items-center text-center">
-            <button v-on:click="clicBackward()">
+            <button class="buttonz" v-on:click="clicBackward()">
                 1026 days
             </button>
-            <button v-on:click="clicForward()">
+            <button class="buttonz" v-on:click="clicForward()">
                 13 hours
             </button>
-            <button v-on:click="clicBackward()">
+            <button class="buttonz" v-on:click="clicBackward()">
                 24 mins
             </button>
-            <button v-on:click="clicForward()">
+            <button class="buttonz" v-on:click="clicBackward()">
                 17 secs
             </button>
         </div>
         <div class="onSale d-flex justify-content-between py-3 my-3">
-            <div class="product">
+            <div @mouseleave="dismount('blockUno')"  @mouseover="mount('blockUno')" class="product">
                 <img :src="slides[IndexUno].image" alt="">
                 <div class="blackOverlay">
-                    <div>
-                        <div>{{ slides[IndexDue].title }}</div>
-                        <div>£{{ slides[IndexDue].price }}</div>
+                    <div class="infoItems">
+                        <div class="golden">{{ slides[IndexUno].rating }}</div>
+                        <div>{{ slides[IndexUno].title }}</div>
+                        <div class="golden">£{{ slides[IndexUno].price }}</div>
                     </div>
                 </div>
+                <div id="Uno" class=" invisible product-interation-box d-flex justify-content-between">
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-solid fa-bag-shopping" />
+                    </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-regular fa-heart" /> </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-solid fa-maximize" />
+                    </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-regular fa-eye" /> </button>
+                </div>
             </div>
-            <div class="product">
+            <div @mouseleave="dismount('blockDue')" @mouseover="mount('blockDue')" class="product">
                 <img :src="slides[IndexDue].image" alt="">
                 <div class="blackOverlay">
-                    <div>
-                        <div>{{ slides[IndexUno].title }}</div>
-                        <div>£{{ slides[IndexUno].price }}</div>
+                    <div class="infoItems">
+                        <div class="golden">{{ slides[IndexDue].rating }}</div>
+                        <div>{{ slides[IndexDue].title }}</div>
+                        <div class="golden">£{{ slides[IndexDue].price }}</div>
                     </div>
                 </div>
+                <div id="Due" class="invisible product-interation-box d-flex justify-content-between">
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-solid fa-bag-shopping" />
+                    </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-regular fa-heart" /> </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-solid fa-maximize" />
+                    </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-regular fa-eye" /> </button>
+                </div>
             </div>
-            <div class="product">
+            <div @mouseleave="dismount('blockTre')" @mouseover="mount('blockTre')" class="product">
                 <img :src="slides[IndexTre].image" alt="">
                 <div class="blackOverlay">
-                    <div>
-                        <div>{{ slides[IndexQuattro].title }}</div>
-                        <div>£{{ slides[IndexQuattro].price }}</div>
+                    <div class="infoItems">
+                        <div class="golden">{{ slides[IndexTre].rating }}</div>
+                        <div>{{ slides[IndexTre].title }}</div>
+                        <div class="golden">£{{ slides[IndexTre].price }}</div>
                     </div>
                 </div>
+                <div id="Tre" class="invisible product-interation-box d-flex justify-content-between">
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-solid fa-bag-shopping" />
+                    </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-regular fa-heart" /> </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-solid fa-maximize" />
+                    </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-regular fa-eye" /> </button>
+                </div>
             </div>
-            <div class="product">
+            <div @mouseleave="dismount('blockQuattro')" @mouseover="mount('blockQuattro')" class="product">
                 <img :src="slides[IndexQuattro].image" alt="">
                 <div class="blackOverlay">
-                    <div>
-                        <div>{{ slides[IndexTre].title }}</div>
-                        <div>£{{ slides[IndexTre].price }}</div>
+                    <div class="infoItems">
+                        <div class="golden">{{ slides[IndexQuattro].rating }}</div>
+                        <div>{{ slides[IndexQuattro].title }}</div>
+                        <div class="golden">£{{ slides[IndexQuattro].price }}</div>
                     </div>
+                </div>
+                <div id="Quattro" class="invisible product-interation-box d-flex justify-content-between">
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-solid fa-bag-shopping" />
+                    </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-regular fa-heart" />
+                    </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-solid fa-maximize" />
+                    </button>
+                    <button class="productInteration">
+                        <font-awesome-icon class="icn" icon="fa-regular fa-eye" />
+                    </button>
                 </div>
             </div>
             <div>
-                <button id="pre" v-on:click="clicBackward()" class="prev button"> ← </button>
-                <button id="nex" v-on:click="clicForward()" class="next button"> → </button>
+                <button id="previous" v-on:click="clicBackward()" class="prev button"> &lt </button>
+                <button id="next" v-on:click="clicForward()" class="next button"> > </button>
             </div>
         </div>
     </div>
@@ -153,18 +243,38 @@ export default {
     width: 80%;
     margin: 0 auto;
 
-    .tratto {
-        border: 2px solid #c2c402;
-        width: 7%;
-        border-radius: 10px;
+    h1 {
+        letter-spacing: 4px;
+    }
+
+    .trattoBox {
+        margin-bottom: 34px;
+        margin-top: 4px;
+
+        .tratto {
+            width: 7.5%;
+            border: 2px solid #F9AA01;
+            border-radius: 10px;
+        }
     }
 }
 
 .btnContainer {
-    div {
-        padding: 10px;
-        width: calc((100% / 3) - 280px);
-        border: 1px solid white;
+    background-color: none;
+
+    .buttonz {
+        width: calc(33.3333333333% - 220px);
+        background-color: inherit;
+        padding: 12px 38px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 21px;
+        border: 0.5px solid rgba(128, 128, 128, 0.218);
+        color: white;
+    }
+
+    .buttonz:hover {
+        color: #F9AA01;
     }
 }
 
@@ -187,15 +297,55 @@ export default {
         .blackOverlay {
             width: 100%;
             height: 79px;
-            background-color: #3700377a;
+            background-color: #1e001e;
             bottom: 0%;
+
+            .infoItems {
+                padding-left: 10px;
+
+                div {
+                    font-size: 17px;
+                    letter-spacing: 1px;
+
+                }
+
+                .golden {
+                    color: #F9AA01;
+                }
+            }
+        }
+
+        .product-interation-box {
+            position: absolute;
+            width: 23.3%;
+            height: 33px;
+            z-index: 2;
+            background-color: #1e001e;
+            bottom: -21%;
+            color: white;
+            text-align: center;
+
+
+            .productInteration {
+                width: 26%;
+                height: 107%;
+                border: 1px solid black;
+                color: white;
+                background-color: inherit;
+                padding: 4px;
+                .icn:hover {
+                    color: #F9AA01;
+                }
+
+            }
+
         }
 
     }
 }
 
 .prev {
-    left: -2%;
+    left: -2.52%;
 }
 
 .next {
@@ -203,13 +353,23 @@ export default {
 }
 
 .button {
-    top: 50%;
-    padding: 1px 10px;
+    top: 59%;
+    padding: 1px 13px;
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background-color: inherit;
+    color: white;
+    border: 1px solid white;
 }
 
-.hide {
+.hidden {
     visibility: hidden;
+}
+
+.invisible {
+    display: none;
 }
 </style>

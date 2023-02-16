@@ -1,0 +1,70 @@
+
+.mainBox {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 15px;
+    padding-top: 2%;
+    color: white;
+}
+
+.cards {
+    width: calc((100% / 2) - 15px);
+    height: 45vh;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        filter: brightness(0.8);
+    }
+
+    .textOnCards {
+        position: absolute;
+        top: 33%;
+        right: 107px;
+
+
+    }
+
+    .adContainer {
+        position: absolute;
+        top: 26%;
+        left: 46%;
+
+        .goldenAd {
+            width: 219px;
+            height: 50px;
+            transform: skew(340deg);
+            background-color: #F9AA01;
+        }
+
+        .titleBanner {
+            bottom: -1%;
+            left: 8.5%;
+            font-weight: bold;
+            position: absolute;
+            font-size: 39px;
+            color: #171717;
+            font-size: 34px;
+            font-style: italic;
+            letter-spacing: 2px;
+        }
+    }
+
+    .adTitle {
+        position: absolute;
+        top: 42%;
+        left: 44%;
+
+        div {
+            font-size: 41px;
+            letter-spacing: 3px;
+
+            br {
+                display: block;
+                content: "";
+                margin-top: -22px;
+            }
+        }
+    }
+}

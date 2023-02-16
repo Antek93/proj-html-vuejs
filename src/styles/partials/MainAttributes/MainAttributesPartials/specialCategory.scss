@@ -1,0 +1,94 @@
+.specialBox {
+    width: 80%;
+    margin: 0 auto;
+
+    h1 {
+        letter-spacing: 4px;
+    }
+
+    .trattoBox {
+        margin-bottom: 34px;
+        margin-top: 4px;
+
+        .tratto {
+            width: 7.5%;
+            border: 2px solid #F9AA01;
+            border-radius: 10px;
+        }
+    }
+
+}
+
+.cardsContainer {
+    width: 100%;
+
+    .card {
+        width: calc(33.3333333333% - 8px);
+        border-radius: 0px;
+        height: 479px;
+        background-color: white;
+        border: 0px;
+        position: relative;
+
+        .collapsing {
+            width: 18%;
+            height: 20px;
+            line-height: 20px;
+            vertical-align: middle;
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 6px;
+            border: 0.5px solid gray;
+            background-color: white;
+            position: absolute;
+            transform: translate(-50%, .50%);
+            top: 50%;
+            left: 50%;
+
+            div {
+                font-size: 11px;
+                text-align: center;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .purpleOverlay {
+            width: 100%;
+            height: 79px;
+            position: absolute;
+            background-color: #2b012b8f;
+            bottom: 0%;
+
+            .game-title {
+                font-size: 20px;
+                font-weight: bold;
+                letter-spacing: 2px;
+            }
+
+            .shopping {
+                a {
+                    text-decoration: underline;
+                    color: white;
+                }
+                a:hover {
+                    color: #F9AA01;
+                }
+            }
+        }
+
+        .purpleOverlay:hover {
+            background-color: black;
+        }
+
+    }
+
+    .invisible {
+        display: none;
+
+    }
+}

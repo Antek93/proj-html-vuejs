@@ -54,47 +54,5 @@ export default {
 </template>
 
 <style lang="scss">
-.over {
-    width: 80%;
-    height: 3vh;
-    margin: 0 auto;
-    text-align: center;
-    color: gray;
-
-    .wishlist {
-        width: 8%;
-
-        div {
-            cursor: pointer;
-        }
-
-        div:hover {
-            color: white;
-        }
-
-
-    }
-
-    .splitter {
-        width: 4%;
-
-    }
-
-    .needHelp {
-        width: 8%;
-
-        div {
-            cursor: pointer;
-        }
-
-        div:hover {
-            color: white;
-        }
-    }
-
-    .phoneNumbers {
-        width: 80%;
-        text-align: end;
-    }
-}
+@import "../../styles/partials/HeaderAttributes/HeaderPartialsAttributes/OverSegmentAttributes.scss";
 </style>

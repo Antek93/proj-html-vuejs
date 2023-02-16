@@ -1,0 +1,14 @@
+.sponsorBox {
+    width: 80%;
+    margin: 0 auto;
+    height: 10vh;
+
+    .icon {
+        width: calc(20% - 50px);
+        height: 120%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

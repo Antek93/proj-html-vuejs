@@ -32,6 +32,7 @@ import { faSkype } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faDiamond } from '@fortawesome/free-solid-svg-icons'
 import { faCircle } from '@fortawesome/free-solid-svg-icons'
+import { faQuoteRight } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faUserSecret,
     faMagnifyingGlass,
@@ -56,6 +57,7 @@ library.add(faUserSecret,
     faInstagram,
     faDiamond,
     faCircle,
+    faQuoteRight,
 )
 
 createApp(App)

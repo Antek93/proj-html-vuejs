@@ -52,6 +52,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@import "../../../styles/partials/MainAttributes/MainAttributesPartials/infoMain.scss";
+
 .mainBox {
     width: 80%;
     margin: 0 auto;

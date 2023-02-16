@@ -113,7 +113,7 @@ export default {
                     name: 'Harry Mark',
                     job: '   (Project Manager)',
                 }, {
-                    image: '',
+                    image: '../../../src/assets/bph/t6-1-100x100_left.jpg',
                     name: '',
                     job: '',
                 }
@@ -190,9 +190,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.mainBackground {
-    width: 100%;
-    background-image: url('../../assets/bph/body-bg.jpg');
-    padding: 0px;
-}
+
+@import "../../styles/partials/MainAttributes/MainAttributes.scss";
 </style>

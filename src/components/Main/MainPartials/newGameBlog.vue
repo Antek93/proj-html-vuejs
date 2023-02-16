@@ -47,17 +47,19 @@ export default {
 };
 </script>
 
-<template>
+<template> <!--NEW GAME BLOG CONTAINER-->
     <div class="blogBox py-4 text-white">
         <div class="d-flex justify-content-center">
-            <h1>
+            <h1>  <!--NEW GAME BLOG TITLE-->
                 New Game Blog
             </h1>
         </div>
         <div class="trattoBox d-flex justify-content-center">
+            <!--TRATTINO GIALLO SEPARE'-->
             <div class="tratto"></div>
         </div>
         <div class="newsContainer d-flex justify-content-between text-white">
+            <!-- PRIMO BOX DEL NEWS BLOG -->
             <div @mouseover="builded('immagineUno')" @mouseleave="unbuilded('immagineUno')" class="news">
                 <div>
                     <img src="../../../assets/bph/Nisi-ut-aliquid-ex-ea-com-1400x878_t.jpg" alt="">
@@ -90,6 +92,7 @@ export default {
                     </div>
                 </div>
             </div>
+            <!-- SECONDO BOX DEL NEWS BLOG -->
             <div @mouseover="builded('immagineDue')" @mouseleave="unbuilded('immagineDue')" class="news">
                 <div>
                     <img src="../../../assets/bph/Illo-inventore-veritatis-quasi-1400x878_t.jpg" alt="">
@@ -122,6 +125,7 @@ export default {
                     </div>
                 </div>
             </div>
+            <!-- TERZO BOX DEL NEWS BLOG -->
             <div @mouseover="builded('immagineTre')" @mouseleave="unbuilded('immagineTre')" class="news">
                 <div>
                     <img src="../../../assets/bph/At-vero-eos-et-accusamus-1400x878_t.jpg" alt="">

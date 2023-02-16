@@ -1,13 +1,9 @@
 <script>
-//Import da store.js
-import { store } from "../../../store"
-
 export default {
     name: 'BachecaAds',
     data() {
         return {
             msg: 'Ciao',
-            store
         }
     },
     created() {

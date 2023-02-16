@@ -118,17 +118,20 @@ export default {
 </script>
 
 <template>
-    <!-- CONTAINER OUR PRODUCTS -->
+    <!-- CONTAINER: DEAL OF THE DAY -->
     <div class="specialBox py-3 my-3 text-white">
         <div class="d-flex justify-content-center">
+            <!-- TITLE  -->
             <h1>
                 Deal Of The Day
             </h1>
         </div>
         <div class="trattoBox d-flex justify-content-center">
-            <div class="tratto"></div>
+            <!-- TRATTINO GIALLO SEPARE' -->
+            <div class="tratto"></div> 
         </div>
         <div class="btnContainer d-flex justify-content-center align-items-center text-center">
+            <!-- BOTTONI SCADENZA ORARIA -->
             <button class="buttonz" v-on:click="clicBackward()">
                 1026 days
             </button>
@@ -145,6 +148,7 @@ export default {
         <div class="onSale d-flex justify-content-between py-3 my-3">
             <div @mouseleave="dismount('blockUno')"  @mouseover="mount('blockUno')" class="product">
                 <img :src="photos[IndexUno].image" alt="">
+                <!-- 1) BLOCCO OVERLAY NELLA PARTE INFERIORE DEI PRODOTTI -->
                 <div class="blackOverlay">
                     <div class="infoItems">
                         <div class="golden">{{ slides[IndexUno].rating }}</div>
@@ -152,6 +156,7 @@ export default {
                         <div class="golden">£{{ slides[IndexUno].price }}</div>
                     </div>
                 </div>
+                <!-- 1) ELEMENTO NELLA SEZIONE A COMPARSA NELLA PARTE INFERIORE DEI PRODOTTI  -->
                 <div id="Uno" class=" invisible product-interation-box d-flex justify-content-between">
                     <button class="productInteration">
                         <font-awesome-icon class="icn" icon="fa-solid fa-bag-shopping" />
@@ -167,6 +172,7 @@ export default {
             </div>
             <div @mouseleave="dismount('blockDue')" @mouseover="mount('blockDue')" class="product">
                 <img :src="photos[IndexDue].image" alt="">
+                <!-- 2) BLOCCO OVERLAY NELLA PARTE INFERIORE DEI PRODOTTI -->
                 <div class="blackOverlay">
                     <div class="infoItems">
                         <div class="golden">{{ slides[IndexDue].rating }}</div>
@@ -174,6 +180,7 @@ export default {
                         <div class="golden">£{{ slides[IndexDue].price }}</div>
                     </div>
                 </div>
+                <!-- 2) ELEMENTO NELLA SEZIONE A COMPARSA NELLA PARTE INFERIORE DEI PRODOTTI  -->
                 <div id="Due" class="invisible product-interation-box d-flex justify-content-between">
                     <button class="productInteration">
                         <font-awesome-icon class="icn" icon="fa-solid fa-bag-shopping" />
@@ -189,6 +196,7 @@ export default {
             </div>
             <div @mouseleave="dismount('blockTre')" @mouseover="mount('blockTre')" class="product">
                 <img :src="photos[IndexTre].image" alt="">
+                <!-- 3) BLOCCO OVERLAY NELLA PARTE INFERIORE DEI PRODOTTI -->
                 <div class="blackOverlay">
                     <div class="infoItems">
                         <div class="golden">{{ slides[IndexTre].rating }}</div>
@@ -196,6 +204,7 @@ export default {
                         <div class="golden">£{{ slides[IndexTre].price }}</div>
                     </div>
                 </div>
+                <!-- 3) ELEMENTO NELLA SEZIONE A COMPARSA NELLA PARTE INFERIORE DEI PRODOTTI  -->
                 <div id="Tre" class="invisible product-interation-box d-flex justify-content-between">
                     <button class="productInteration">
                         <font-awesome-icon class="icn" icon="fa-solid fa-bag-shopping" />
@@ -211,6 +220,7 @@ export default {
             </div>
             <div @mouseleave="dismount('blockQuattro')" @mouseover="mount('blockQuattro')" class="product">
                 <img :src="photos[IndexQuattro].image" alt="">
+                <!-- 4) BLOCCO OVERLAY NELLA PARTE INFERIORE DEI PRODOTTI -->
                 <div class="blackOverlay">
                     <div class="infoItems">
                         <div class="golden">{{ slides[IndexQuattro].rating }}</div>
@@ -218,6 +228,7 @@ export default {
                         <div class="golden">£{{ slides[IndexQuattro].price }}</div>
                     </div>
                 </div>
+                <!-- 4) ELEMENTO NELLA SEZIONE A COMPARSA NELLA PARTE INFERIORE DEI PRODOTTI  -->
                 <div id="Quattro" class="invisible product-interation-box d-flex justify-content-between">
                     <button class="productInteration">
                         <font-awesome-icon class="icn" icon="fa-solid fa-bag-shopping" />
@@ -233,6 +244,7 @@ export default {
                     </button>
                 </div>
             </div>
+            <!-- FRECCE CON FUNZIONI DI CAMBIO CAROSELLO  -->
             <div>
                 <button id="prevArr" v-on:click="clicBackward()" class="prev button"> &lt </button>
                 <button id="nextArr" v-on:click="clicForward()" class="next button"> > </button>
@@ -243,5 +255,4 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../../styles/partials/MainAttributes/MainAttributesPartials/DealOfTheDay.scss";
-
 </style>

@@ -207,13 +207,14 @@ export default {
 
         <!-- BLOCCO ICONE AGGIUNTIVE -->
         <div class="moreIcons d-flex justify-content-end">
-            <div class="thisIcon">
+            <div class="thisIcon"> <!--ICONA LENTE D'INGRANDIMENTO-->
                 <font-awesome-icon icon="hov fa-solid fa-magnifying-glass" />
             </div>
-            <div class="thisIcon">
+            <div class="thisIcon"> <!--ICONA UTENTE-->
                 <font-awesome-icon icon="hov fa-regular fa-user" />
             </div>
             <div class="bagShop thisIcon d-flex align-items-center hov">
+                                    <!--ICONA BORSA SHOPPING-->
                 <font-awesome-icon icon="fa-solid fa-bag-shopping" />
                 <div class="priceCart"> (0) £0.00 </div>
             </div>

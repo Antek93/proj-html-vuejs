@@ -118,13 +118,15 @@ export default {
     <!-- CONTAINER OUR PRODUCTS -->
     <div class="specialBox py-3 my-3 text-white">
         <div class="d-flex justify-content-center">
-            <h1>
+            <h1> <!-- OUR PRODUCTS TITLE -->
                 Our Products
             </h1>
         </div>
         <div class="trattoBox d-flex justify-content-center">
+            <!-- TRATTINO GIALLO SEPARE' -->
             <div class="tratto"></div>
         </div>
+        <!-- PULSANTI COMANDO PER CAMBIARE ELEMENTI CAROSELLI  -->
         <div class="btnContainer d-flex justify-content-center align-items-center text-center">
             <button class="buttonz" v-on:click="clicBackward()">
                 Featured
@@ -136,9 +138,11 @@ export default {
                 Best Sellers
             </button>
         </div>
+
         <div class="onSale d-flex justify-content-between py-3 my-3">
             <div @mouseleave="dismount('blockUno')"  @mouseover="mount('blockUno')" class="product">
                 <img :src="slides[IndexUno].image" alt="">
+                <!-- 1) BLOCCO OVERLAY NELLA PARTE INFERIORE DEI PRODOTTI -->
                 <div class="blackOverlay">
                     <div class="infoItems">
                         <div class="golden">{{ slides[IndexUno].rating }}</div>
@@ -146,6 +150,7 @@ export default {
                         <div class="golden">£{{ slides[IndexUno].price }}</div>
                     </div>
                 </div>
+                <!-- 2) ELEMENTO NELLA SEZIONE A COMPARSA NELLA PARTE INFERIORE DEI PRODOTTI  -->
                 <div id="blockUno" class=" invisible product-interation-box d-flex justify-content-between">
                     <button class="productInteration">
                         <font-awesome-icon class="icn" icon="fa-solid fa-bag-shopping" />
@@ -161,6 +166,7 @@ export default {
             </div>
             <div @mouseleave="dismount('blockDue')" @mouseover="mount('blockDue')" class="product">
                 <img :src="slides[IndexDue].image" alt="">
+                <!-- 2) BLOCCO OVERLAY NELLA PARTE INFERIORE DEI PRODOTTI -->
                 <div class="blackOverlay">
                     <div class="infoItems">
                         <div class="golden">{{ slides[IndexDue].rating }}</div>
@@ -168,6 +174,7 @@ export default {
                         <div class="golden">£{{ slides[IndexDue].price }}</div>
                     </div>
                 </div>
+                <!-- 2) ELEMENTO NELLA SEZIONE A COMPARSA NELLA PARTE INFERIORE DEI PRODOTTI  -->
                 <div id="blockDue" class="invisible product-interation-box d-flex justify-content-between">
                     <button class="productInteration">
                         <font-awesome-icon class="icn" icon="fa-solid fa-bag-shopping" />
@@ -183,6 +190,7 @@ export default {
             </div>
             <div @mouseleave="dismount('blockTre')" @mouseover="mount('blockTre')" class="product">
                 <img :src="slides[IndexTre].image" alt="">
+                <!-- 3) BLOCCO OVERLAY NELLA PARTE INFERIORE DEI PRODOTTI -->
                 <div class="blackOverlay">
                     <div class="infoItems">
                         <div class="golden">{{ slides[IndexTre].rating }}</div>
@@ -190,6 +198,7 @@ export default {
                         <div class="golden">£{{ slides[IndexTre].price }}</div>
                     </div>
                 </div>
+                <!-- 3) ELEMENTO NELLA SEZIONE A COMPARSA NELLA PARTE INFERIORE DEI PRODOTTI  -->
                 <div id="blockTre" class="invisible product-interation-box d-flex justify-content-between">
                     <button class="productInteration">
                         <font-awesome-icon class="icn" icon="fa-solid fa-bag-shopping" />
@@ -205,6 +214,7 @@ export default {
             </div>
             <div @mouseleave="dismount('blockQuattro')" @mouseover="mount('blockQuattro')" class="product">
                 <img :src="slides[IndexQuattro].image" alt="">
+                <!-- 4) BLOCCO OVERLAY NELLA PARTE INFERIORE DEI PRODOTTI -->
                 <div class="blackOverlay">
                     <div class="infoItems">
                         <div class="golden">{{ slides[IndexQuattro].rating }}</div>
@@ -212,6 +222,7 @@ export default {
                         <div class="golden">£{{ slides[IndexQuattro].price }}</div>
                     </div>
                 </div>
+                <!-- 4) ELEMENTO NELLA SEZIONE A COMPARSA NELLA PARTE INFERIORE DEI PRODOTTI  -->
                 <div id="blockQuattro" class="invisible product-interation-box d-flex justify-content-between">
                     <button class="productInteration">
                         <font-awesome-icon class="icn" icon="fa-solid fa-bag-shopping" />

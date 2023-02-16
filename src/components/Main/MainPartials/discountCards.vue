@@ -44,7 +44,7 @@ export default {
                     </div>
                 </div>
             </div>
-            <!-- LATEST GAME -->
+            <!-- "LATEST GAME" CONTAINER -->
             <div class="cards">
                 <div>
                     <img src="../../../assets/bph/cms-banner-04.jpg" alt="">

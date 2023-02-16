@@ -67,6 +67,7 @@ export default {
     <div @click="changeDisplay(), changeDots()" class="teamBox container-fluid">
         <img src="../../../assets/bph/parallax.jpg" alt="">
         <div class="teamProfile d-flex justify-content-center">
+            <!-- IMMAGINE UTENTE TEAM -->
             <div class="teamProfilePhoto">
                 <img :src="team[activeIndex].image" alt="">
             </div>
@@ -74,7 +75,9 @@ export default {
         <div class="infoProfile">
             <div class="circle"></div>
             <div class="nameProfile">
+                <!-- NOME UTENTE TEAM -->
                 <span class="name">{{ team[activeIndex].name }} </span>
+                <!-- LAVORO UTENTE TEAM -->
                 <span class="job"> {{ team[activeIndex].job }}</span>
             </div>
             <div class="textProfile d-flex justify-content-center">
@@ -86,12 +89,12 @@ export default {
                     eaque aut doloribus sit.
                 </p>
             </div>
-            <div class="quotes">
-                <div class="quoteBox">
+            <div class="quotes"> <!-- VIRGOLETTE -->
+                <div class="quoteBox"> 
                     <font-awesome-icon class="thisQuote" icon="fa-solid fa-quote-right" />
                 </div>
             </div>
-        </div>
+        </div>     <!-- CONTENITORE TRE PALLINI -->
         <div class="threeDots d-flex justify-content-evenly">
             <div id="dotOne" class="dotstyle">
                 <font-awesome-icon icon="fa-solid fa-circle" />

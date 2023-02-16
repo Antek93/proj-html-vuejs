@@ -53,13 +53,15 @@ export default {
     <!-- CONTAINER SPECIAL CATERGORY -->
     <div class="specialBox my-3 text-white">
         <div class="d-flex justify-content-center">
-            <h1>
+            <h1> <!-- SPECIAL CATEGORY TITLE  -->
                 Special Category
             </h1>
         </div>
         <div class="trattoBox d-flex justify-content-center">
-            <div class="tratto"></div>
+            <!-- TRATTINO GIALLO SEPARE'  -->
+            <div class="tratto"></div> 
         </div>
+        <!-- SEZIONE GIOCO BATTLEFIELD III  -->
         <div class="cardsContainer d-flex justify-content-between">
             <div @mouseleave="removeDiv('gameUno')" @mouseover="buildDiv('gameUno')" class="card">
                 <img src="../../../assets/bph/category-image-02-446x550_t.jpg" alt="">
@@ -77,6 +79,7 @@ export default {
                     </div>
                 </div>
             </div>
+            <!-- SEZIONE GIOCO SNIPER II  -->
             <div @mouseleave="removeDiv('gameDue')" @mouseover="buildDiv('gameDue')" class="card">
                 <img src="../../../assets/bph/category-image-01-446x550_t.jpg" alt="">
                 <div class="purpleOverlay">
@@ -93,6 +96,7 @@ export default {
                     </div>
                 </div>
             </div>
+            <!-- SEZIONE GIOCO KAKAROT  -->
             <div @mouseleave="removeDiv('gameTre')" @mouseover="buildDiv('gameTre')" class="card">
                 <img src="../../../assets/bph/category-image-03-446x550_t.jpg" alt="">
                 <div class="purpleOverlay">
